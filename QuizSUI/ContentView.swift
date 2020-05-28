@@ -30,7 +30,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack (spacing: 20.0) {
-            Text(question)
+            Text(question).animation(.easeInOut(duration: 0.5))
             Button(action: {self.showNextQuestion()}) {
                 Text("Next Question")
             }
